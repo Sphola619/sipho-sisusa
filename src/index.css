@@ -81,3 +81,7 @@ body::after {
 * {
   max-width: 100%;
 } 
+
+html {
+  font-size: 20px;
+}
