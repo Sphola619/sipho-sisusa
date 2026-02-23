@@ -1,0 +1,47 @@
+.contact {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-content {
+  max-width: 600px;
+}
+
+.contact-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #4da6ff;
+}
+
+.contact-content p {
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  transition: 0.3s ease;
+}
+
+.contact-links a:hover {
+  background: #4da6ff;
+  color: black;
+  transform: translateY(-5px);
+}

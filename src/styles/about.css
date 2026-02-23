@@ -1,0 +1,51 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 800px;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #4da6ff;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+.journey {
+  margin-top: 60px;
+  text-align: left;
+}
+
+.journey h3 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #4da6ff;
+  text-align: center;
+}
+
+.journey-item {
+  margin-bottom: 30px;
+}
+
+.journey-item h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.journey-item p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  opacity: 0.8;
+}
