@@ -1,51 +1,49 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-scroll";
 import "../styles/navbar.css";
 
 function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className={scrolled ? "navbar scrolled" : "navbar"}>
-      <Link to="home" smooth duration={500} className="logo">
-        S.Sisusa
-      </Link>
+    <nav className="navbar">
+      <div className="logo">
+        <Link to="home" smooth={true} duration={500}>
+          S.Sisusa
+        </Link>
+      </div>
 
-      <ul>
+      <div
+        className={`hamburger ${menuOpen ? "active" : ""}`}
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul className={menuOpen ? "nav-links open" : "nav-links"}>
         <li>
-          <Link to="about" smooth duration={500}>
+          <Link to="about" smooth duration={500} onClick={() => setMenuOpen(false)}>
             About
           </Link>
         </li>
-
         <li>
-          <Link to="tech" smooth duration={500}>
+          <Link to="tech" smooth duration={500} onClick={() => setMenuOpen(false)}>
             Tech Stack
           </Link>
         </li>
-
         <li>
-          <Link to="projects" smooth duration={500}>
+          <Link to="projects" smooth duration={500} onClick={() => setMenuOpen(false)}>
             Projects
           </Link>
         </li>
-
         <li>
-          <Link to="contact" smooth duration={500}>
+          <Link to="contact" smooth duration={500} onClick={() => setMenuOpen(false)}>
             Contact
           </Link>
         </li>
       </ul>
-
     </nav>
   );
 }
