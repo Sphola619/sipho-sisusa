@@ -7,6 +7,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 20px;
 }
 
 body {
@@ -19,18 +20,24 @@ body {
     #243b55
   );
   background-size: 400% 400%;
-  animation: gradientShift 12s ease infinite;
+  animation: gradientShift 7s ease infinite;
   color: white;
   overflow-x: hidden;
 }
 
-/* Animated gradient */
+/* Animated Gradient (more dynamic movement) */
 @keyframes gradientShift {
   0% {
     background-position: 0% 50%;
   }
+  25% {
+    background-position: 50% 0%;
+  }
   50% {
     background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 100%;
   }
   100% {
     background-position: 0% 50%;
@@ -43,45 +50,42 @@ body::before,
 body::after {
   content: "";
   position: fixed;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   border-radius: 50%;
   filter: blur(150px);
   z-index: -1;
-  opacity: 0.4;
+  opacity: 0.5;
   pointer-events: none;
-  animation: floatGlow 20s ease-in-out infinite alternate;
+  animation: floatGlow 14s ease-in-out infinite alternate;
 }
 
+/* Blue glow */
 body::before {
   background: #4da6ff;
   top: -200px;
   left: -200px;
 }
 
+/* Purple glow */
 body::after {
   background: #7b61ff;
   bottom: -200px;
   right: -200px;
-  animation-delay: 5s;
+  animation-delay: 4s;
 }
 
+/* More exaggerated glow motion */
 @keyframes floatGlow {
   0% {
-    transform: translate(0px, 0px);
+    transform: translate(0px, 0px) scale(1);
   }
+
   50% {
-    transform: translate(100px, 50px);
+    transform: translate(200px, 120px) scale(1.1);
   }
+
   100% {
-    transform: translate(-50px, 100px);
+    transform: translate(-160px, 180px) scale(0.9);
   }
-}
-
-* {
-  max-width: 100%;
-} 
-
-html {
-  font-size: 20px;
 }
