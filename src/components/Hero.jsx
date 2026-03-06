@@ -40,7 +40,7 @@ function Hero() {
         </div>
 
         <div className="hero-cv">
-          <a href="/Sipho-Sisusa-CV.pdf" download>
+          <a href="/Sipho_Sisusa_Resume_Web_Dev Résumé.pdf" download>
             Download My Résumé
           </a>
         </div>
