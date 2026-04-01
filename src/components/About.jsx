@@ -35,7 +35,7 @@ function About() {
           <h3>My Journey</h3>
 
           <div className="journey-item">
-            <h4>🎓 2022 – University of Fort Hare</h4>
+            <h4>2022 – University of Fort Hare</h4>
             <p>
               In 2022, I graduated with an Honours Degree in Financial Markets
               from the University of Fort Hare, developing a strong foundation
@@ -44,7 +44,7 @@ function About() {
           </div>
 
           <div className="journey-item">
-            <h4>💼 2023 – Bidvest Bank Graduate Program</h4>
+            <h4>2023 – Bidvest Bank Graduate Program</h4>
             <p>
               I worked in the Treasury Department, gaining exposure to money
               markets, liquidity management, and foreign exchange operations,
@@ -53,7 +53,7 @@ function About() {
           </div>
 
           <div className="journey-item">
-            <h4>📜 2024 – ACI Dealing Certificate</h4>
+            <h4>2024 – ACI Dealing Certificate</h4>
             <p>
               Earned the ACI Dealing Certificate, refining my expertise in
               financial instruments and strengthening my analytical mindset.
@@ -61,7 +61,7 @@ function About() {
           </div>
 
           <div className="journey-item">
-            <h4>💻 2024 – Transition to Tech</h4>
+            <h4>2024 – Transition to Tech</h4>
             <p>
               Completed a Full Stack Web Development Bootcamp with HyperionDev,
               building applications using JavaScript, React, Node.js, and
@@ -70,7 +70,7 @@ function About() {
           </div>
 
           <div className="journey-item">
-            <h4>🚀 2024 – Continued Learning</h4>
+            <h4>2024 – Continued Learning</h4>
             <p>
               Continued improving through platforms like FreeCodeCamp and
               The Odin Project, focusing on JavaScript fundamentals and
@@ -79,7 +79,7 @@ function About() {
           </div>
 
           <div className="journey-item">
-            <h4>👨‍💻 2025 – Marome Investments</h4>
+            <h4>2025 – Marome Investments</h4>
             <p>
               Began working as a Junior Front-End Developer, contributing to
               live projects, building reusable UI components, optimizing
