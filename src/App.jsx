@@ -6,6 +6,8 @@ import TechStack from "./components/TechStack";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
+// Decorative stars are generated once so the background feels organic
+// without needing a separate asset or hard-coded positions.
 const stars = Array.from({ length: 80 }, (_, index) => ({
   id: index,
   top: `${Math.random() * 100}%`,
@@ -18,6 +20,7 @@ const stars = Array.from({ length: 80 }, (_, index) => ({
 function App() {
   return (
     <div className="app-shell">
+      {/* Purely visual background layer kept outside the main content flow. */}
       <div className="page-stars" aria-hidden="true">
         {stars.map((star) => (
           <span

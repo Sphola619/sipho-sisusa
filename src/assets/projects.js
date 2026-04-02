@@ -1,3 +1,4 @@
+// Centralized project data keeps the Projects component focused on rendering.
 const projects = [
   {
     title: "Marome Investments Website",

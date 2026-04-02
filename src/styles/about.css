@@ -40,8 +40,16 @@
 }
 
 .journey-item h4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 1rem;
   margin-bottom: 10px;
+}
+
+.journey-item h4 svg {
+  color: #4da6ff;
+  flex-shrink: 0;
 }
 
 .journey-item p {

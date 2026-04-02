@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import "../styles/navbar.css";
 
 function Navbar() {
+  // Controls the mobile menu state while reusing the same links for desktop.
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -13,6 +14,7 @@ function Navbar() {
         </Link>
       </div>
 
+      {/* Hamburger button only changes classes; CSS handles the visual transition. */}
       <div
         className={`hamburger ${menuOpen ? "active" : ""}`}
         onClick={() => setMenuOpen(!menuOpen)}

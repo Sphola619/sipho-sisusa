@@ -33,6 +33,7 @@ function Projects() {
         </p>
 
         <div className="projects-grid">
+          {/* Project cards are driven by the shared data file for easier maintenance. */}
           {projects.map((project, index) => (
             <div className="project-card" key={index}>
               <h3>{project.title}</h3>
