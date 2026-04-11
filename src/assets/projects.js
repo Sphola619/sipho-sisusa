@@ -17,6 +17,14 @@ const projects = [
     live: "https://active-nation.onrender.com/",
   },
   {
+    title: "Forex Trading AI Assistant",
+    description:
+      "This app is designed to help a user monitor selected forex pairs and precious metals, open a dedicated detail page for each market, view a TradingView chart, and read AI-generated market commentary based on technical and macro context.",
+    tech: "React, Python, Gemini API, TradingView API",
+    github: "https://github.com/Sphola619/forex-assistant",
+    live: "https://forex-assistant-one.vercel.app/",
+  },
+  {
     title: "Game Day Recap Blog",
     description:
       "A JavaScript-based blog app that allows users to create and share game day recaps, featuring a dynamic home page, post creation, and comment functionality.",
