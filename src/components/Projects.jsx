@@ -41,12 +41,21 @@ function Projects() {
               <span className="tech-used">{project.tech}</span>
 
               <div className="project-buttons">
-                <a href={project.github} target="_blank" rel="noreferrer">
-                  GitHub
-                </a>
-                <a href={project.live} target="_blank" rel="noreferrer">
-                  Live Demo
-                </a>
+                {project.frontendRepo ? (
+                  <a href={project.frontendRepo} target="_blank" rel="noreferrer">
+                    {project.backendRepo ? "Frontend Repo" : "GitHub"}
+                  </a>
+                ) : null}
+                {project.backendRepo ? (
+                  <a href={project.backendRepo} target="_blank" rel="noreferrer">
+                    Backend Repo
+                  </a>
+                ) : null}
+                {project.live ? (
+                  <a href={project.live} target="_blank" rel="noreferrer">
+                    Live Demo
+                  </a>
+                ) : null}
               </div>
             </div>
           ))}
