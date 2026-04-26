@@ -1,3 +1,4 @@
+/* Fixed navigation bar across the top of the page */
 .navbar {
   position: fixed;
   top: 0;
@@ -9,6 +10,7 @@
   z-index: 1000;
 }
 
+/* Brand/logo text on the left */
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -16,23 +18,25 @@
   cursor: pointer;
 }
 
-/* Default nav links */
+/* Desktop navigation link list */
 .nav-links {
   list-style: none;
   display: flex;
   gap: 30px;
 }
 
+/* Individual nav item */
 .nav-links li {
   cursor: pointer;
   transition: 0.3s ease;
 }
 
+/* Hover color for navigation items */
 .nav-links li:hover {
   color: #4da6ff;
 }
 
-/* Hamburger */
+/* Hamburger button wrapper */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -40,6 +44,7 @@
   gap: 5px;
 }
 
+/* Lines inside the hamburger icon */
 .hamburger span {
   width: 25px;
   height: 3px;
@@ -47,23 +52,25 @@
   transition: 0.3s ease;
 }
 
-/* Mobile Styles */
+/* Mobile navigation layout */
 @media (max-width: 768px) {
+  /* Reduces navbar padding on smaller screens */
   .navbar {
     padding: 15px 20px;
   }
 
-  /* Hide logo but keep spacing structure */
+  /* Hides the logo visually while preserving layout balance */
   .logo {
     visibility: hidden;
   }
 
-  /* Push hamburger to right */
+  /* Shows the hamburger and keeps it aligned right */
   .hamburger {
     display: flex;
     margin-left: auto;
   }
 
+  /* Mobile dropdown menu panel */
   .nav-links {
     position: absolute;
     top: 70px;
@@ -78,6 +85,7 @@
     transition: 0.4s ease;
   }
 
+  /* Slide-in state for the open mobile menu */
   .nav-links.open {
     transform: translateY(0);
   }

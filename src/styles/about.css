@@ -1,3 +1,4 @@
+/* About section wrapper */
 .about {
   display: flex;
   align-items: center;
@@ -6,16 +7,19 @@
   text-align: center;
 }
 
+/* Keeps the about text from stretching too wide */
 .about-content {
   max-width: 1000px;
 }
 
+/* Main heading for the about section */
 .about-content h2 {
   font-size: 2.5rem;
   margin-bottom: 30px;
   color: #4da6ff;
 }
 
+/* Intro paragraphs under the about heading */
 .about-content p {
   font-size: 1.1rem;
   margin-bottom: 20px;
@@ -23,11 +27,13 @@
   line-height: 1.6;
 }
 
+/* Timeline/journey block below the intro copy */
 .journey {
   margin-top: 60px;
   text-align: left;
 }
 
+/* Subheading for the journey section */
 .journey h3 {
   font-size: 1.8rem;
   margin-bottom: 30px;
@@ -35,10 +41,12 @@
   text-align: center;
 }
 
+/* Individual journey entry spacing */
 .journey-item {
   margin-bottom: 30px;
 }
 
+/* Title row for each journey item */
 .journey-item h4 {
   display: flex;
   align-items: center;
@@ -47,11 +55,13 @@
   margin-bottom: 10px;
 }
 
+/* Accent color for the icon inside each title */
 .journey-item h4 svg {
   color: #4da6ff;
   flex-shrink: 0;
 }
 
+/* Supporting text for each journey item */
 .journey-item p {
   font-size: 0.85rem;
   line-height: 1.6;

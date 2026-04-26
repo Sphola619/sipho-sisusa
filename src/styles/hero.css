@@ -1,3 +1,4 @@
+/* Full-height hero section */
 .hero {
   min-height: 100vh;
   height: auto;
@@ -8,20 +9,24 @@
   padding: 0 20px;
 }
 
+/* Keeps hero text above decorative layers */
 .hero-content {
   position: relative;
   z-index: 1;
 }
 
+/* Main hero headline */
 .hero-content h1 {
   font-size: 3rem;
   margin-bottom: 20px;
 }
 
+/* Accent color on the highlighted name/text */
 .hero-content h1 span {
   color: #4da6ff;
 }
 
+/* Intro paragraph under the headline */
 .hero-content p {
   max-width: 600px;
   margin: 0 auto 30px;
@@ -29,12 +34,14 @@
   opacity: 0.8;
 }
 
+/* Button row for primary hero actions */
 .hero-buttons {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
+/* Base button styling for hero links */
 .hero-buttons a {
   text-decoration: none;
   padding: 12px 25px;
@@ -45,20 +52,24 @@
   transition: 0.3s ease;
 }
 
+/* Small lift on hover */
 .hero-buttons a:hover {
   transform: scale(1.05);
 }
 
+/* Secondary outline button variation */
 .hero-buttons .outline {
   background: transparent;
   border: 2px solid #4da6ff;
   color: #4da6ff;
 }
 
+/* Resume/CV link below the main buttons */
 .hero-cv {
   margin-top: 25px;
 }
 
+/* Link styling for the CV action */
 .hero-cv a {
   text-decoration: none;
   font-weight: bold;
@@ -66,44 +77,50 @@
   transition: 0.3s ease;
 }
 
+/* Softens the CV link on hover */
 .hero-cv a:hover {
   opacity: 0.8;
 }
 
-
-/* 📱 Mobile Styles */
+/* Mobile adjustments for smaller hero layouts */
 @media (max-width: 768px) {
-
+  /* Allows more breathing room on short screens */
   .hero {
     padding: 0 20px;
     height: auto;
   }
 
+  /* Scales the main heading down for mobile */
   .hero-content h1 {
     font-size: 2rem;
     line-height: 1.2;
   }
 
+  /* Lets the intro text use the available width */
   .hero-content p {
     font-size: 1rem;
     max-width: 100%;
   }
 
+  /* Stacks the main actions vertically on mobile */
   .hero-buttons {
     flex-direction: column;
     gap: 15px;
     margin-top: 20px;
   }
 
+  /* Makes mobile buttons easier to tap */
   .hero-buttons a {
     width: 100%;
     text-align: center;
   }
 
+  /* Tightens the spacing above the CV link */
   .hero-cv {
     margin-top: 20px;
   }
 
+  /* Slightly smaller CV text on mobile */
   .hero-cv a {
     display: inline-block;
     font-size: 0.95rem;

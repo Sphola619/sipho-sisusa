@@ -1,3 +1,4 @@
+/* Tech stack section wrapper */
 .tech {
   padding: 80px 20px;
   display: flex;
@@ -6,17 +7,20 @@
   text-align: center;
 }
 
+/* Constrains the content width */
 .tech-content {
   max-width: 1200px;
   width: 100%;
 }
 
+/* Main tech stack heading */
 .tech-content h2 {
   font-size: 2.5rem;
   margin-bottom: 16px;
   color: #4da6ff;
 }
 
+/* Intro text above the grouped cards */
 .tech-intro {
   max-width: 720px;
   margin: 0 auto 50px;
@@ -25,12 +29,14 @@
   opacity: 0.8;
 }
 
+/* Two-column layout for the skill groups */
 .tech-groups {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
 }
 
+/* Card for each skill category */
 .tech-group-card {
   position: relative;
   padding: 28px;
@@ -44,6 +50,7 @@
   overflow: hidden;
 }
 
+/* Soft glow decoration inside each category card */
 .tech-group-card::before {
   content: "";
   position: absolute;
@@ -55,10 +62,12 @@
   pointer-events: none;
 }
 
+/* Spacing between the category label and its icons */
 .tech-group-header {
   margin-bottom: 22px;
 }
 
+/* Small pill label showing the skill category */
 .tech-group-tag {
   display: inline-flex;
   align-items: center;
@@ -74,6 +83,7 @@
   text-transform: uppercase;
 }
 
+/* Category description text */
 .tech-group-header p {
   margin: 0;
   font-size: 0.92rem;
@@ -81,12 +91,14 @@
   opacity: 0.8;
 }
 
+/* Grid of individual tech items */
 .tech-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 14px;
 }
 
+/* Individual technology card */
 .tech-card {
   display: flex;
   flex-direction: column;
@@ -103,11 +115,13 @@
   transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
 }
 
+/* Large icon inside each tech card */
 .tech-card svg {
   font-size: 2.6rem;
   color: #f4f7fb;
 }
 
+/* Technology label text */
 .tech-card p {
   margin: 0;
   font-size: 0.92rem;
@@ -115,23 +129,28 @@
   letter-spacing: 0.02em;
 }
 
+/* Hover lift and highlight for each tech card */
 .tech-card:hover {
   transform: translateY(-6px);
   background: rgba(77, 166, 255, 0.12);
   border-color: rgba(77, 166, 255, 0.24);
 }
 
+/* Tablet layout stacks the skill groups */
 @media (max-width: 900px) {
   .tech-groups {
     grid-template-columns: 1fr;
   }
 }
 
+/* Mobile sizing for the group cards and inner grid */
 @media (max-width: 600px) {
+  /* Slightly reduces card padding on small screens */
   .tech-group-card {
     padding: 22px;
   }
 
+  /* Keeps the icon cards readable in two columns */
   .tech-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
